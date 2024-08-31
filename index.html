@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c97a081c6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--------------------------------------------Hero/banner----------------------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/My-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="images/Mohsin Naseer Resume.pdf" download>Download CV</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Mohsin</span><br>From Pakistan</h1>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------About----------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-body">Hi, I'm Mohsin Naseer, a dedicated Flutter Developer from Islamabad, Pakistan,
+                        with a Bachelor's degree in Computer Science from the National University of Modern Languages.
+                        My journey in mobile app development has been fueled by a passion for creating seamless and
+                        intuitive user experiences.
+
+                        I have successfully developed multiple apps, including a Doctor Appointment App, an Assist
+                        Dysarthria App, and a Video Editing App. My technical skill set includes Python, Java,
+                        JavaScript, Dart, Flutter, Node.js, Flask, and proficiency in databases like MySQL, MongoDB, and
+                        Firebase. I also have experience with AWS and GitHub.
+
+                        I am always eager to learn and grow, continuously improving my skills to stay ahead in the
+                        fast-paced tech industry. Let's connect and explore how we can collaborate to create impactful
+                        solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, NodeJS, MongoDB</li>
+                            <li><span>App Development</span><br>Java(Native), Flutter(Hybrid)</li>
+                            <li><span>AI Development</span><br>Python, Flask</li>
+                            <li><span>Tools & Platforms</span><br>AWS, Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar 2024 - June 2024</span><br>Flutter Developer at LinkHR</li>
+                            <li><span>June 2023</span><br>Hackathon Participant - Challenging Hate, Media Matters for
+                                Democracy </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Bachelors in Computer Science from NUML, Islamabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------services------------------------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p class="service-para">We design and build responsive, user-friendly websites tailored to your
+                        business needs. Our web development services ensure a seamless experience across all devices,
+                        leveraging the latest technologies for optimal performance and security.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p class="service-para">From concept to launch, we create innovative mobile applications that engage
+                        users and drive results. Our app development process focuses on delivering high-quality,
+                        scalable solutions that meet your unique requirements and exceed expectations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p class="service-para">Harness the power of AI to transform your business operations and customer
+                        experiences. We offer AI solutions that integrate advanced machine learning, data analytics, and
+                        automation to drive efficiency and innovation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------------------------------------Portfolio--------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project-1.png">
+                    <div class="layer">
+                        <h3>Video Editing App</h3>
+                        <p class="service-para">This Flutter application provides an intuitive video editing experience
+                            with various
+                            functionalities, including trimming, rotating, cropping, and exporting videos.</p>
+                        <a href="https://github.com/Mohsin0855/Flutter-Video-Editing-App" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Project-2.png">
+                    <div class="layer">
+                        <h3>Assist Dysarthria</h3>
+                        <p class="service-para">Assist Dysarthria is a Flutter application designed to aid individuals
+                            with dysarthria by
+                            providing features for audio recording, audio file selection, speech-to-text transcription,
+                            and text-to-speech conversion.</p>
+                        <a href="https://github.com/Mohsin0855/Assist-Dysarthria-Flutter-App" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Project-3.png">
+                    <div class="layer">
+                        <h3>Airline Reservation System Website</h3>
+                        <p class="service-para">The Airline Reservation System, built with Java Servlet, allows admin control over flights
+                            and user tickets, while passengers securely register, log in, and book flights.</p>
+                        <a href="https://github.com/Mohsin0855/Air-line-Reservation-System-JAVA-Servlet" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+
+
+        <!--------------------------------------------------Contect------------------------------------------------------>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>chmohsin.official@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+92-3105023407</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Mohsin0855" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://x.com/MohsinN83936566" target="_blank"><i
+                                    class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.instagram.com/smlearners" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/mohsin-naseer-ba03621a1/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Mohsin Naseer Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Mohsin Naseer.</p>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+            var menu = document.getElementById("sidemenu");
+            function openmenu() {
+                menu.style.right = "0";
+            }
+            function closemenu() {
+                menu.style.right = "-200px"
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzwiSYQPKZQY5azJUk_8YJ_ajJgFaxNCpNeN5i3C25raPpNeHNaIxqbgnG_jPzycLu97g/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+</body>
+
+</html>
